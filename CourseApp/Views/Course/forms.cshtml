@@ -1,0 +1,38 @@
+﻿@model Student
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <form asp-action="basvuru_kayit" method="post">
+        <p>
+            <label for="name">Adınız</label>
+            <input type="text" name="name"  />
+        </p> 
+        <p>
+            <label for="surname">Soyadınız</label>
+            <input type="text" name="surname"  />
+        </p>
+        <p>
+            <label for="eposta">Eposta</label>
+            <input type="text" name="eposta"  />
+        </p>
+        <p>
+            <label for="phone">Telefon</label>
+            <input type="text" name="phone"  />
+        </p>
+        <p>
+            <label for="confirm">Kursa Katılacak Mısınız? </label>
+            <select name="confirm">
+                <option value="true">Evet,geliyorum</option>
+                <option value="false">Hayır,gelmiyorum</option>
+            </select>
+           
+        </p>
+        <input type="submit" value="Gönder" />
+    </form>
+</body>
+</html>

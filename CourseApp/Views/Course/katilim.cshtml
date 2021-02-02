@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Student>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+
+            @foreach (var student in Model)
+            {
+                <td>
+                    @student.Name
+                </td>
+                <td>
+                    @student.Surname
+                </td>
+                <td>
+                    @student.Email
+                </td>
+                <td>
+                    @student.Phone
+                </td>
+                <td>
+                    @student.Confirm
+                </td>
+            }
+
+        </tr>
+    </table>
+</body>
+</html>

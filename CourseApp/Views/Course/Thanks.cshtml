@@ -1,0 +1,20 @@
+﻿@model Student
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            Kayıt Başarılı @Model.Name @Model.Surname 
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name Kayıt Tamamlandı</h5>
+            <p class="card-text">Kayıt Başarıyla Tamamlandı,Görüşmek üzere @Model.Name</p>
+            <a asp-action="katilim" asp-controller="Course" class="btn btn-primary">Katılanları Göster</a>
+        </div>
+    </div>
+</body>
+</html>

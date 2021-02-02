@@ -2,10 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CourseApp.Controllers
 {
@@ -20,8 +17,12 @@ namespace CourseApp.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Username = "Faruks";
+            int saat = DateTime.Now.Hour;
+            ViewBag.Zaman = saat > 12 ? "İyi Günler " : "Günaydın";
             return View();
         }
+
 
         public IActionResult Privacy()
         {

@@ -1,0 +1,17 @@
+﻿@model Course_models
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <p>Name: @Model.Name</p>
+    <p>Desc: @Model.desc</p>
+    <p>Publish :@Model.isPublish</p>
+
+    <p>
+        <a asp-action="forms" asp-controller="Course">Başvuru Yap</a>
+    </p>
+</body>
+</html>
