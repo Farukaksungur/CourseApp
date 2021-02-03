@@ -12,6 +12,7 @@ namespace CourseApp.Controllers
             course.Name = "Faruk";
             course.desc = "deneme";
             course.isPublish = true;
+
             return View(course);
         }
 
@@ -46,5 +47,7 @@ namespace CourseApp.Controllers
             var students = Repository.Students.Where(i => i.Confirm == true);
             return View(students);
         }
+
+       
     }
 }
