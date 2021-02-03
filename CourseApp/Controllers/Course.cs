@@ -29,10 +29,15 @@ namespace CourseApp.Controllers
         [HttpPost]
         public IActionResult basvuru_kayit(Student student)
         {
-            Repository.AddStudent(student);
-
-
-           return View("Thanks",student);
+            if (ModelState.IsValid)
+            {
+                Repository.AddStudent(student);
+                return View("Thanks", student);
+            }
+            else
+            {
+                return View("forms",student);
+            }
         }
 
         public IActionResult Katilim()            
